@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,90 +7,99 @@
   <title>Mi Pagina web</title>
   <link rel="stylesheet" href="estilos.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-<div>
-  <header>
-    <h1 style="text-align: center;">pagina de Cursos y Blogs de ayuda </h1>
-  </header>
-</div>
-<div>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navegacion</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Cursos.html">cursos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="contacto.html">contacto</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-</div>
 
-<div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navegacion</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  mas 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="#">otra accion</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Proyectos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Recursos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar en el blog" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+<div class="container my-4">
   <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/algebra-e1577465340342.jpg" class="d-block w-100" alt="...">
+        <img src="images/3.jpg" class="d-block w-100" alt="imagen1">
       </div>
       <div class="carousel-item">
-        <img src="images/ayudaEx.jpg" class="d-block w-100" alt="...">
+        <img src="images/1.jpg" class="d-block w-100" alt="imagen2">
       </div>
       <div class="carousel-item">
-        <img src="images/calculo.jpg" class="d-block w-100" alt="...">
+        <img src="images/2.jpg" class="d-block w-100" alt="imagen3">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
-  </div>
-  <h2>Ubicacion de la Academia E-learninig</h2>
-  <!-- ubicacionn de google maps -->
-  <iframe width="560" height="315" src="https://www.google.com/maps/embed?pb=Universidad+Mayor+de+San+Andrés/@-16.5047258,-68.1680286,14z/data=!4m10!1m2!2m1!1sumsa!3m6!1s0x915f206520793ddd:0x53f6df346cc69976!8m2!3d-16.5047258!4d-68.1299198!15sCgR1bXNhWgYiBHVtc2GSARFwdWJsaWNfdW5pdmVyc2l0eZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSTGNHUnVjVmgzRUFF4AEA!16s%2Fm%2F076vvrf?entry=ttu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-<div>
-  <footer>
-    <ul>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><img src="images/youtube.png" height="40" alt="yutube"></li>
-      <li><img src="images/instagram.png" height="40" alt="instagram"></li>
+<div class="container my-4">
+  <h2 class="text-center">Ubicación de la Academia E-learning</h2>
+  <div class="row">
+    <div class="col-md-6">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d638.291940696877!2d-68.13077227551507!3d-16.5044119734888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f20648b4ee7f7%3A0x481215884d093a35!2sGrupo%20Alfa!5e0!3m2!1ses-419!2sbo!4v1716432458686!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <div class="text-center">
+        <img src="images/ACADEMIA.jpg" class="img-fluid mb-3" alt="Academia E-learning" style="height: 150px; width: 150px;">
+        <p>¡Bienvenidos a la Academia Pasión por la Ciencia! Nuestra misión es proporcionar la mejor educación en línea con cursos y recursos diseñados para ayudarte a alcanzar tus metas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <ul class="list-unstyled">
+      <li><a href="nosotros.html" class="text-white">Nosotros</a></li>
+      <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" height="40" alt="YouTube"></a></li>
+      <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" height="40" alt="Instagram"></a></li>
     </ul>
-      
-  </footer>    
+    <p class="mb-0">© 2024 Academia E-learning. Todos los derechos reservados.</p>
+  </div>
+</footer>  
 </div>
 </body>
 </html>
