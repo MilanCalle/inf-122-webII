@@ -1,55 +1,204 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/ico.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <title>Cursos</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="">
+  <title>Mi Pagina web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" />
+  
+  </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navegacion</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <body id="home">
+  
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/cursos.png" alt="" width="150" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="Cursos.html">Cursos</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      mas
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
-                      <li><a class="dropdown-item" href="#">otra accion</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">PROYECTOS</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Recursos</a>
+                    <a class="nav-link" href="RegistroFormulario.html">Iniciar Sesion</a>
+                  </li>
+                 
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar cursos" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header vh-100 text-center position-relative">
+      <div
+        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <h5 class="text-primary fs-3 fw-bold text-uppercase">Bienvenidos </h5>
+        <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
+
+        <p class="roles text-white text-uppercase fs-4">
+          <span>Cursos de apoyo  </span>
+          <span>Educacion</span>
+        </p>
+
+        <a href="#about" class="btn btn-outline-light btn-lg mt-3">
+          <div class="d-flex">
+            <div class="me-3">
+              <i class="fas fa-chevron-down"></i>
             </div>
-          </nav>
-      </header>
-      
+            <div class="text-start">
+              <span>Ir a los cursos</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="row">
+          <div class="col-12">
+            <!-- carusel-->
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  type="button"
+                  data-bs-slide-to="0"
+                  data-bs-target="#slider"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="1"
+                  data-bs-target="#slider"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="2"
+                  data-bs-target="#slider"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                  <img
+                    src="images/cursosOnline.jpeg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+              </div>
+              <!-- Buttons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-slide="prev"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-slide="next"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="social d-flex gap-3 position-absolute">
+          <a href="#">
+            <i class="fab fa-twitter fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github fa-3x text-white"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h4 class="text-uppercase fw-bold text-primary">CURSOS DISPONIBLES</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Presentacion.</h2>
+        </div>
+        <div class="about-content d-flex gap-5 align-items-center h-100">
+          <img
+            src="images/brad.jpg"
+            alt=""
+            class="about-img img-fluid rounded-circle"
+          />
+          <p class="lead">
+            I am a full stack web developer from Boston MA. I started writing
+            code about 16 years ago. I started with Java and then moved to web
+            technologies like HTML, CSS, JavaScript and PHP. I have worked for
+            companies as well as ran my own. In 2016 I started creating content
+            full-time. I love helping people learn to code and better their
+            lives.
+          </p>
+        </div>
+      </div>
+    </section>
+   <br>
       <div class="row row-cols-1 row-cols-md-4 g-4 ">
         <div class="col">
         <div class="card h-100" style="width: 18rem;">
@@ -167,5 +316,6 @@
               </div>
           </footer>
         </body>
+
         </html>
        

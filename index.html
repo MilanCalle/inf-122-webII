@@ -5,131 +5,631 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="">
   <title>Mi Pagina web</title>
-  <link rel="stylesheet" href="estilos.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
-<body>
-
-  <header>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navegacion</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Cursos.html">Cursos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  mas 
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
-                  <li><a class="dropdown-item" href="#">otra accion</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Proyectos</a></li>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" />
+  
+  </head>
+  <body id="home">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/cursos.png" alt="" width="150" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Cursos.html">Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                 
+                  </li>
                 </ul>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header py-7 vh-100">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <div class="col-12 text-container">
+            <h1 class="display-2 text-white mt-3">
+             Descubre nuestros cursos de material de Apoyo
+             <br>"carrera de Informatica"
+            </h1>
+            <p class="lead text-white w-75 m-auto mb-4">
+              Si buscas ayuda con los cursos de las materias de Matematica, Fisica, Informatica y Estadistica .Este es el lugar adecuado con participacion de auxiliares de la materia
+            </p>
+            <a href="RegistroFormulario.html" class="btn btn-primary text-uppercase">
+              Registrarse
+            </a>
+            <a href="blog.html" class="btn btn-outline-light text-uppercase">
+              Blog de Ayuda
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <!-- carusel-->
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  type="button"
+                  data-bs-slide-to="0"
+                  data-bs-target="#slider"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="1"
+                  data-bs-target="#slider"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="2"
+                  data-bs-target="#slider"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                  <img
+                    src="images/Caru1.jpeg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/caru2.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/caru3.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+              </div>
+              <!-- Buttons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-slide="prev"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-slide="next"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Register -->
+    <section class="register bg-primary py-6 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Buscas Apoyo en tus Materias ?</h2>
+            <p>
+              Nosotros brindamos apoyo con clases, resolucion de practicas,resolucion de ejercicios,
+              apoyo en proyectos. etc.
+            </p>
+
+            <ul class="list-unstyled vstack gap-3">
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Aprueba todas tus materias</strong> Nuestra plataforma ayuda con cursos de exalumnos y docentes en el apoyo incondicional hacia ;ps estudiantes
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Recursos</a>
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Encuentra Material de Apoyo</strong> Recopilacion de todo el material de aopoyo de las materias de Calculo, Fisica , Matematica y Estadistica
+              </li>
+              <li>
+                <i class="fas fa-square"></i>
+                <strong>Amplia tu conocimiento</strong> Encuentra y conecta con una comunidad que brinda apoyo.
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="BUSCAR " aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </div>
+          <div class="col-lg-6 p-4">
+            <form>
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Ingresa tu Nombre"
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="email"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Ingresa tu Email"
+                />
+              </div>
+              <div class="my-4">
+                <input
+                  type="text"
+                  class="form-control form-control-lg rounded-0 border-0"
+                  placeholder="Ingresa tu Telefono"
+                />
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="" />
+                <label for="terms" class="form-check-label">
+                  Estoy de Acurdo con las condiciones de esta pagina
+                </label>
+              </div>
+              <div class="d-grid mt-4">
+                <button class="btn btn-outline-dark">Registrar</button>
+              </div>
             </form>
           </div>
         </div>
-      </nav>
-  </header>
-  <div class="top">
-  <div class="container  my-4">
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </section>
+
+    <!--Detalles  -->
+    <section id="discover" class="details py-6 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="images/intructores (1).jpeg"
+              alt=""
+              class="img-fluid rounded-5 mb-4"
+            />
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h2>Mejora tus habilidades con muestros cursos gratuitos para los apasionados por las ciencias</h2>
+            <p>
+              Nuestra extensa colección de videos de capacitación de  gestiones pasadas  está diseñada para ayudar a
+              Mejoras tus habilidades y sobresales en el campo elegido. Si
+              Nuestros videos brindan información valiosa y
+              conocimientos prácticos.Ademas disponemos de clases presenciales personalizadas 
+            </p>
+            <p>
+              Con instructores expertos y un contenido completo, obtendrá la
+              confianza y competencia para afrontar los retos y pasar todas tus materias
+            </p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="images/2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+    </section>
+
+    <!-- Points -->
+    <section class="points pb-5">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-md-8 offset-md-2">
+            <h2>Descubre la facilidad de los temas mas dificiles con docentes expeimentados </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">
+                  1
+                </span>
+              </div>
+              <div>
+                <h3 class="fs-4">Mejora tus Habilidades </h3>
+                <p>
+                  Nuestros videos de capacitación brindan información completa y
+                  Consejos prácticos para ayudarte a mejorar tus habilidades en varios
+                  Dominios. Desde la experiencia técnica hasta las habilidades blandas, tenemos
+                  que cubriste.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">2</span>
+              </div>
+              <div>
+                <h3 class="fs-4">este Preparado</h3>
+                <p>
+                  Manténgase al día con las últimas tendencias y avances de la industria
+                  a través de nuestros videos informativos y actualizados. Adelántese a la
+                  la curva y amplíe sus conocimientos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">3</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Conecta con expertos</h3>
+                <p>
+                  Nuestra plataforma le permite conectarse con personas de ideas afines
+                  individuos y expertos de la industria. Amplíe su red de contactos, fomente
+                  nuevas conexiones y desbloquear nuevas oportunidades.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">4</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Horarios flexibles </h3>
+                <p>
+                  Nuestros videos de capacitación están disponibles bajo demanda, lo que le permite
+                  Aprenda a su propio ritmo y conveniencia. Accede al contenido
+                  en cualquier momento y en cualquier lugar, y adapte su experiencia de aprendizaje.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">5</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Conocimiento sin LImites</h3>
+                <p>
+                  Adquirir conocimientos prácticos y aplicarlos directamente al mundo real
+                  Escenarios. Nuestros videos ofrecen información práctica y práctica
+                  Consejos para ayudarte a tener éxito en tus esfuerzos profesionales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-2 px-4 fs-3 rounded-circle">6</span>
+              </div>
+              <div>
+                <h3 class="fs-4">Aprendizaje continuo </h3>
+                <p>
+                  El aprendizaje permanente es clave para el crecimiento personal y profesional.
+                  Explora una amplia colección de videos de capacitación y embárcate en un
+                  Viaje de aprendizaje continuo y superación personal.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="images/3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+    </section>
+
+    
+    <!-- Detalles -->
+    <section class="details py-6 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="images/preparacion.jpeg"
+              alt=""
+              class="img-fluid rounded-5 mb-4"
+            />
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h2>Preparate para los Parciales con Clases de Apoyo </h2>
+            <p>
+              Unete a nuestras clases de resolucioon de examenes pasados todos los viernes de 10-12am 
+              en las inmediaciones de la carrera  de Informatica
+            </p>
+            <p>
+              Sumérgete en interesantes debates, talleres interactivos,
+              y valiosas oportunidades para establecer contactos.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  </div>
-</div>
+    </section>
 
-<div class="container my-4">
-  <h3 class="text-center blockquote">Ubicación de la Academia E-learning</h3>
-  <div class="row">
-    <div class="col-md-7 d-flex justify-content-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d638.291940696877!2d-68.13077227551507!3d-16.5044119734888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f20648b4ee7f7%3A0x481215884d093a35!2sGrupo%20Alfa!5e0!3m2!1ses-419!2sbo!4v1716432458686!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="col-md-4 d-flex align-items-center">
-      <div class="text-center">
-        <img src="images/ACADEMIA.jpg" class="img-fluid mb-3" alt="Academia E-learning" style="height: 150px; width: 150px;">
-        <p>¡Bienvenidos a la Academia Pasión por la Ciencia! Nuestra misión es proporcionar la mejor educación en línea con cursos y recursos diseñados para ayudarte a alcanzar tus metas.</p>
+    <!-- Invitation -->
+    <section class="invitation mb-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="invitation-bg text-center py-6 rounded-5">
+              <div class="text-white w-75 m-auto">
+                <h2 class="display-5 fw-bold">Unete a nuestras clases de apoyo para la temporada de  Invierno  2024</h2>
+                <p>
+                  Le invitamos cordialmente a asistir a muestras clases de apoyo ,
+                  donde exploraremos diversos temas y perspectivas relacionadas con
+                  <strong>materias de Servicio y basicas </strong>. Seran sesiones en la que puede obtener conocimientos valiosos sobre CALCULO, Fisica
+                  ESTADISTICA,PROGRAMACION,ETC.
+                  No te pierdas esta oportunidad de mejorar tus habilidades y
+                  Amplía tus horizontes. Únete a nosotros y sé parte de este enriquecedor
+                  ¡experiencia!
+                </p>
+                <a href="RegistroFormulario.html" class="btn btn-primary btn-lg">
+                  REGISTRATE AHORA  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="video">
-<div class="ratio ratio-21x9">
-  <iframe src="https://www.youtube.com/embed/_EKDACRTUak?si=Bk0_HLUrYvT_N-vk" title="YouTube video" allowfullscreen></iframe>
-</div>
-</div>
-
-</body>
-<footer class="bg-dark text-white text-center py-4 mt-5">
+    </section>
+<!-- Testimonios  -->
+<section class="testimonials mb-8">
   <div class="container">
-    <ul class="list-unstyled mb-3">
-      <li><a href="nosotros.html" class="text-white">Nosotros</a></li>
-      <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" height="40" alt="YouTube"></a></li>
-      <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" height="40" alt="Instagram"></a></li>
-    </ul>
-    <p class="mb-0">© 2024 Academia E-learning. Todos los derechos reservados.</p>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img
+          src="images/perso1.jpg"
+          alt=""
+          class="rounded-circle mb-3"
+        />
+        <p class="lead fst-italic">
+          "esta pagina web realmente me ayudo con las dudas que tenia, gracias 100% recomendado  "
+        </p> UMSA
+        <p class="fw-bold">Lucas - Univ. UMSA</p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img
+          src="images/pers2.jpg"
+          alt=""
+          class="rounded-circle mb-3"
+        />
+        <p class="lead fst-italic">
+          "¡Estoy muy agradecida por el material de apoyo que! Me proporcionó la guía
+          y la inspiración que necesitaba para mejorar en mis mateias. ¡Es un cambio de juego que necesitaba!"
+        </p>
+        <p class="fw-bold">Carlos - Egresado carrera de Informatica</p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img
+          src="images/img4.jpg"
+          alt=""
+          class="rounded-circle mb-3"
+        />
+        <p class="lead fst-italic">
+          "Si quieren apoyo con problemas que tengan ellos estan dispuestos a brindarte todo el apoyo que necesites siempre 
+          animo muchachos :V"
+        </p>
+        <p class="fw-bold">Tania, Estudiante 1er Semestre</p>
+      </div>
+    </div>
   </div>
-</footer>
-</footer>
-</div>
-</body>
+</section>
+
+
+    <!-- Takeaways -->
+    <section id="takeaways" class="takeaways my-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-md-8 offset-md-2">
+            <h2>Toma ventaja </h2>
+            <p class="lead">
+              Aqui algunos programas que contamos para el apoyo mutuo 
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-atom fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Recopilacion de Paginas</h5>
+                <p class="card-text">
+                  Recopilacion de las mejores paginas de apoyo Academico como Coursera, Udemy, etc
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-key fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Material de Apoyo</h5>
+                <p class="card-text">
+                  Descubre la amplia variedad de productos que ofrecemos 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-newspaper fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Acceo a Revistas Cientificas</h5>
+                <p class="card-text">
+                 Colaboracion en la adquisicion del acceco a revitas prestigiosas para estar actualizados 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row -->
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-users fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Trabajo colaborativo</h5>
+                <p class="card-text">
+                 Conecta con otros compañeros ya experimentados que conocen bien la forma de trabajo de los distitas materias.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-handshake fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Oportunidades de Compañerismo</h5>
+                <p class="card-text">
+                 descubre que la comunidad es muy util y amplia con compañeros de distintos semestres
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 rounded-0 border-0 p-3">
+              <div class="card-body text-center">
+                <i
+                  class="fas fa-chart-bar fa-3x text-primary bg-light rounded-circle p-3 my-4"
+                ></i>
+                <h5 class="card-title">Se voluntario</h5>
+                <p class="card-text">
+                  Apoya en el voluntarido con la comunidad en la resolucion de practicas, examenes, etc
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Form -->
+    <section id="subscribe" class="subscribe my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+            <h2>
+              Suscribite y recibe ayuda de nuestros expertos
+            </h2>
+            <form>
+              <div class="my-4">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Ingresa su Correo"
+                />
+                <div class="form-text">
+              toda informacionn es confidencial y privada
+                </div>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary">Subscribirse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer mt-4 text-bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Mas Acerca de Nosotros</h5>
+            <p>
+              Estabas en busca de una pagina netamente enfocada a la solucion de 
+              problemas mas comunes wue nefrentan los estudiantes en los primeros 
+              semestres donde la mayoria abandona por falta de recursos y apoyo adecuado
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Links rapidos</h3>
+            <ul class="list-unstyled">
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="Cursos.html">cursos</a></li>
+              <li><a href="reset.html">Olvido Su contraseña</a></li>
+              <li><a href="register.html">Suscribirse</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Unete a nuestra comunidad </h5>
+            <div class="d-flex gap-3">
+              <a href="#"><i class="fab fa-facebook fa-3x text-white"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-3x text-white"></i></a>
+              <a href="#"><i class="fab fa-linkedin fa-3x text-white"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-3x text-white"></i></a>
+              <a href="#"><i class="fab fa-youtube fa-3x text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
